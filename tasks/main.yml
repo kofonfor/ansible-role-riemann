@@ -1,0 +1,6 @@
+#- name: install Riemann
+#  apt: deb=https://github.com/riemann/riemann/releases/download/0.2.14/riemann_0.2.14_all.deb
+
+- name: put /etc/riemann/riemann.config
+  template: src=riemann.config dest=/etc/riemann/riemann.config backup=yes
+  notify: reload riemann

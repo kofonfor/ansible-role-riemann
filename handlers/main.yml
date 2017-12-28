@@ -1,0 +1,2 @@
+- name: reload riemann
+  service: name=riemann state=reloaded
