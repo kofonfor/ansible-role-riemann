@@ -1,1 +1,2 @@
 graphite_riemann_port: 2003
+collectd_prefix: collectd
